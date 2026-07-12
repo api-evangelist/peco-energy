@@ -160,6 +160,8 @@ apis:
       paths, and is intended only as the mobile and web frontend backend for
       Exelon's regulated utilities.
 common:
+  - type: DomainSecurity
+    url: security/peco-energy-domain-security.yml
   - type: Website
     url: https://www.peco.com
   - type: Customer Portal
