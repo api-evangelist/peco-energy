@@ -12,10 +12,21 @@ tags:
   - Smart Meter
   - Utility
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/peco-energy.png
 access: 3rd-Party
 created: '2026-05-23'
-modified: '2026-05-23'
+modified: '2026-07-25'
 position: Consumer
 specificationVersion: '0.19'
 kind: company
@@ -38,102 +49,6 @@ description: >-
   access framework, through third-party data aggregators (UtilityAPI, Arcadia,
   etc.) using customer credentials.
 apis:
-  - aid: peco-energy:my-account-portal
-    name: PECO My Account Customer Portal
-    tags:
-      - Account Management
-      - Billing
-      - Customer Portal
-      - Outages
-      - Payments
-      - Usage Data
-    humanURL: https://secure.peco.com/MyAccount
-    properties:
-      - url: https://secure.peco.com/MyAccount
-        type: Portal
-      - url: https://www.peco.com/MyAccount
-        type: Documentation
-      - url: https://www.peco.com/MyAccount/MyBillUsage/Pages/EnergyUsage.aspx
-        type: Usage Data
-    description: >-
-      Authenticated customer self-service portal hosted at secure.peco.com that
-      lets residential and small-business customers view and pay bills,
-      schedule payments, enroll in AutoPay and Budget Billing, report and
-      track outages, manage alerts, and view interval and monthly energy
-      usage. The portal is a JavaScript single-page application backed by the
-      internal Exelon Utilities API platform (eudapi.peco.com); no public
-      OpenAPI specification or developer credentials are published.
-  - aid: peco-energy:my-data-energy-usage
-    name: PECO My Data / Energy Usage Export
-    tags:
-      - CSV
-      - Energy Usage
-      - Green Button
-      - Interval Data
-      - Self-Service
-      - Smart Meter
-    humanURL: https://secure.peco.com/MyAccount/MyService/Pages/MyDataMyUsage.aspx
-    properties:
-      - url: https://secure.peco.com/MyAccount/MyService/Pages/MyDataMyUsage.aspx
-        type: Documentation
-      - url: https://www.peco.com/MyAccount/MyBillUsage/Pages/EnergyUsage.aspx
-        type: Usage Data
-    description: >-
-      Customer-driven My Data / Energy Usage export inside the PECO My Account
-      portal, providing smart-meter interval, daily, and monthly usage views
-      with download options for the authenticated account holder. This is the
-      mechanism PECO offers customers to obtain their own usage data; PECO
-      does not publish a documented Green Button Connect My Data third-party
-      API, so programmatic third-party access typically goes through customer
-      credential sharing with utility-data aggregators (UtilityAPI, Arcadia,
-      legacy Urjanet) under Pennsylvania PUC customer-data rules.
-  - aid: peco-energy:outage-map
-    name: PECO Outage Map
-    tags:
-      - GIS
-      - Outages
-      - Public Data
-      - Real Time
-      - Storm Response
-    humanURL: https://www.peco.com/SafetyCommunity/EmergencyPreparedness/PoweroutageMap
-    properties:
-      - url: https://www.peco.com/SafetyCommunity/EmergencyPreparedness/PoweroutageMap
-        type: Outage Map
-      - url: https://www.peco.com/SafetyCommunity/EmergencyPreparedness/Pages/OutageMap.aspx
-        type: Documentation
-    description: >-
-      Public county- and ZIP-level outage map showing active electric outages
-      across PECO's southeastern Pennsylvania service territory, with customer
-      counts affected, estimated restoration, and crew status. The map is
-      browser-rendered; PECO does not publish an outage feed (XML/JSON/CAP)
-      for third-party consumption, so outage data is available only through
-      the map UI and customer-facing alert subscriptions (SMS / email / push
-      via the mobile app).
-  - aid: peco-energy:mobile-apps
-    name: PECO Mobile Apps (iOS and Android)
-    tags:
-      - Android
-      - Apple Watch
-      - Biometric
-      - iOS
-      - Mobile
-      - Push Notifications
-    humanURL: https://apps.apple.com/us/app/peco/id1274171957
-    properties:
-      - url: https://apps.apple.com/us/app/peco/id1274171957
-        type: iOS App
-      - url: https://play.google.com/store/apps/details?id=com.exelon.mobile.peco
-        type: Android App
-    description: >-
-      Native iOS (App Store id 1274171957) and Android
-      (com.exelon.mobile.peco) mobile apps providing biometric sign-in, bill
-      pay, outage reporting, outage map, usage and bill comparison, alerts,
-      multi-account management, and Apple Watch support. Per the iOS listing:
-      "Secure, easy, convenient, PECO's free mobile app allows you to easily
-      access and manage your residential or business account on the go." The
-      apps consume the same internal Exelon Utilities API (eudapi.peco.com)
-      that powers the web portal and are the primary mobile entry point for
-      PECO customers; no public SDK is offered.
   - aid: peco-energy:eudapi-content-api
     name: Exelon Utilities Content API (Internal)
     tags:

@@ -28,10 +28,6 @@ PECO Energy Company is the largest electric and natural gas utility in Pennsylva
 
 ## APIs
 
-### PECO My Account Customer Portal
-Authenticated customer self-service portal hosted at secure.peco.com that lets residential and small-business customers view and pay bills, schedule payments, enroll in AutoPay and Budget Billing, report and track outages, manage alerts, and view interval and monthly energy usage. The portal is a JavaScript single-page application backed by the internal Exelon Utilities API platform (eudapi.peco.com); no public OpenAPI specification or developer credentials are published.
-
-**Human URL:** [https://secure.peco.com/MyAccount](https://secure.peco.com/MyAccount)
 
 #### Tags
 
@@ -43,10 +39,6 @@ Authenticated customer self-service portal hosted at secure.peco.com that lets r
 - [Documentation](https://www.peco.com/MyAccount)
 - [Usage Data](https://www.peco.com/MyAccount/MyBillUsage/Pages/EnergyUsage.aspx)
 
-### PECO My Data / Energy Usage Export
-Customer-driven My Data / Energy Usage export inside the PECO My Account portal, providing smart-meter interval, daily, and monthly usage views with download options for the authenticated account holder. This is the mechanism PECO offers customers to obtain their own usage data; PECO does not publish a documented Green Button Connect My Data third-party API, so programmatic third-party access typically goes through customer credential sharing with utility-data aggregators (UtilityAPI, Arcadia, legacy Urjanet) under Pennsylvania PUC customer-data rules.
-
-**Human URL:** [https://secure.peco.com/MyAccount/MyService/Pages/MyDataMyUsage.aspx](https://secure.peco.com/MyAccount/MyService/Pages/MyDataMyUsage.aspx)
 
 #### Tags
 
@@ -57,10 +49,6 @@ Customer-driven My Data / Energy Usage export inside the PECO My Account portal,
 - [Documentation](https://secure.peco.com/MyAccount/MyService/Pages/MyDataMyUsage.aspx)
 - [Usage Data](https://www.peco.com/MyAccount/MyBillUsage/Pages/EnergyUsage.aspx)
 
-### PECO Outage Map
-Public county- and ZIP-level outage map showing active electric outages across PECO's southeastern Pennsylvania service territory, with customer counts affected, estimated restoration, and crew status. The map is browser-rendered; PECO does not publish an outage feed (XML/JSON/CAP) for third-party consumption, so outage data is available only through the map UI and customer-facing alert subscriptions (SMS / email / push via the mobile app).
-
-**Human URL:** [https://www.peco.com/SafetyCommunity/EmergencyPreparedness/PoweroutageMap](https://www.peco.com/SafetyCommunity/EmergencyPreparedness/PoweroutageMap)
 
 #### Tags
 
@@ -71,10 +59,6 @@ Public county- and ZIP-level outage map showing active electric outages across P
 - [Outage Map](https://www.peco.com/SafetyCommunity/EmergencyPreparedness/PoweroutageMap)
 - [Documentation](https://www.peco.com/SafetyCommunity/EmergencyPreparedness/Pages/OutageMap.aspx)
 
-### PECO Mobile Apps (iOS and Android)
-Native iOS (App Store id 1274171957) and Android (com.exelon.mobile.peco) mobile apps providing biometric sign-in, bill pay, outage reporting, outage map, usage and bill comparison, alerts, multi-account management, and Apple Watch support. Per the iOS listing: "Secure, easy, convenient, PECO's free mobile app allows you to easily access and manage your residential or business account on the go." The apps consume the same internal Exelon Utilities API (eudapi.peco.com) that powers the web portal and are the primary mobile entry point for PECO customers; no public SDK is offered.
-
-**Human URL:** [https://apps.apple.com/us/app/peco/id1274171957](https://apps.apple.com/us/app/peco/id1274171957)
 
 #### Tags
 
