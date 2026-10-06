@@ -37,7 +37,7 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/peco-energy.png
 access: 3rd-Party
 created: '2026-05-23'
-modified: '2026-07-25'
+modified: '2026-10-06'
 position: Consuming
 specificationVersion: '0.23'
 kind: company
@@ -86,6 +86,8 @@ apis:
       paths, and is intended only as the mobile and web frontend backend for
       Exelon's regulated utilities.
 common:
+  - url: https://www.peco.com/blog/
+    type: Blog
   - type: DomainSecurity
     url: security/peco-energy-domain-security.yml
   - type: Website
