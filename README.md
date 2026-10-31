@@ -1,4 +1,4 @@
-# PECO Energy (peco-energy)
+# PECO Energy
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,107 +66,82 @@
 
 PECO Energy Company is the largest electric and natural gas utility in Pennsylvania, serving roughly 1.7 million electric and 553,000 natural gas customers across a 2,100-square-mile service territory in southeastern Pennsylvania. Headquartered in Philadelphia and a wholly owned subsidiary of Exelon Corporation, PECO operates a regulated transmission and distribution business that includes a fully deployed smart-meter network, an LNG storage facility in West Conshohocken, and a portfolio of energy-efficiency, demand response, and assistance programs marketed under the Smart Ideas brand. PECO does not publish a public developer portal or general-purpose API: its digital surface is delivered through the PECO web portal (peco.com / secure.peco.com), iOS and Android mobile apps, and an internal Exelon Utilities content / configuration API (eudapi.peco.com) that is not documented for third-party use. Customer-authorized programmatic access to interval energy usage is available through the customer-facing My Data / Energy Usage tools and, where supported via the Pennsylvania PUC EDI / data access framework, through third-party data aggregators (UtilityAPI, Arcadia, etc.) using customer credentials.
 
-**URL:** [Visit APIs.yml URL](https://raw.githubusercontent.com/api-evangelist/peco-energy/refs/heads/main/apis.yml)
+**Areas:** Electric · Energy · Exelon · Mobile App · Natural Gas · Pennsylvania · Smart Meter · Utility
 
-## Scope
+## PECO Energy on APIs.io
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for PECO Energy is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/peco-energy/](https://apis.io/providers/peco-energy/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (1)
 
-- Electric
-- Energy
-- Exelon
-- Mobile App
-- Natural Gas
-- Pennsylvania
-- Smart Meter
-- Utility
+- [Exelon Utilities Content API (Internal)](https://apis.io/apis/peco-energy/eudapi-content-api/) — Shared Exelon Utilities backend (eudapi.peco.com) referenced by the PECO web portal's runtime configuration at https://www.peco.com/api/GetConfig (which…
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-05-23
-- **Modified:** 2026-05-23
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Security (1)
 
+Authentication, trust centre, and vulnerability disclosure.
 
-#### Tags
+- [Peco Energy Domain Security](https://apis.io/security/peco-energy/peco-energy-domain-security/)
 
-- Account Management, Billing, Customer Portal, Outages, Payments, Usage Data
+## Where to find this API
 
-#### Properties
-
-- [Portal](https://secure.peco.com/MyAccount)
-- [Documentation](https://www.peco.com/MyAccount)
-- [Usage Data](https://www.peco.com/MyAccount/MyBillUsage/Pages/EnergyUsage.aspx)
-
-
-#### Tags
-
-- CSV, Energy Usage, Green Button, Interval Data, Self-Service, Smart Meter
-
-#### Properties
-
-- [Documentation](https://secure.peco.com/MyAccount/MyService/Pages/MyDataMyUsage.aspx)
-- [Usage Data](https://www.peco.com/MyAccount/MyBillUsage/Pages/EnergyUsage.aspx)
-
-
-#### Tags
-
-- GIS, Outages, Public Data, Real Time, Storm Response
-
-#### Properties
-
-- [Outage Map](https://www.peco.com/SafetyCommunity/EmergencyPreparedness/PoweroutageMap)
-- [Documentation](https://www.peco.com/SafetyCommunity/EmergencyPreparedness/Pages/OutageMap.aspx)
-
-
-#### Tags
-
-- Android, Apple Watch, Biometric, iOS, Mobile, Push Notifications
-
-#### Properties
-
-- [iOS App](https://apps.apple.com/us/app/peco/id1274171957)
-- [Android App](https://play.google.com/store/apps/details?id=com.exelon.mobile.peco)
-
-### Exelon Utilities Content API (Internal)
-Shared Exelon Utilities backend (eudapi.peco.com) referenced by the PECO web portal's runtime configuration at https://www.peco.com/api/GetConfig (which exposes baseUrl, contentApiBaseUrl, euApiUrl, AITranslationAPI, and Oracle Digital Assistant / chatbot identifiers). Endpoints discovered include /content-api for portal content and /eult/translate for an AI-translation feature. The API is not documented publicly, returns 404 to anonymous probes for /swagger, /openapi.json, and similar discovery paths, and is intended only as the mobile and web frontend backend for Exelon's regulated utilities.
-
-**Human URL:** [https://eudapi.peco.com](https://eudapi.peco.com)
-
-#### Tags
-
-- Content Delivery, Internal, Mobile Backend, Undocumented
-
-#### Properties
-
-- [BaseURL](https://eudapi.peco.com/content-api)
-- [Configuration Endpoint](https://www.peco.com/api/GetConfig)
-- [AI Translation Endpoint](https://eudapi.peco.com/eult/translate)
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.peco.com)
-- [Customer Portal](https://secure.peco.com/MyAccount)
-- [My Data Energy Usage](https://secure.peco.com/MyAccount/MyService/Pages/MyDataMyUsage.aspx)
-- [Outage Map](https://www.peco.com/SafetyCommunity/EmergencyPreparedness/PoweroutageMap)
-- [Smart Meters](https://www.peco.com/SmartIdeas/Pages/SmartMeters.aspx)
-- [Smart Ideas Programs](https://www.peco.com/SmartIdeas)
-- [Rates and Fees](https://www.peco.com/CustomerService/RatesandFees)
-- [Assistance Programs](https://www.peco.com/CustomerService/AssistancePrograms)
-- [Business Solutions](https://www.peco.com/Business/SmartBusinessSolutions)
-- [iOS App](https://apps.apple.com/us/app/peco/id1274171957)
-- [Android App](https://play.google.com/store/apps/details?id=com.exelon.mobile.peco)
-- [Newsroom](https://www.peco.com/AboutUs/Pages/Newsroom.aspx)
-- [Parent Company](https://www.exeloncorp.com)
-- [Wikipedia](https://en.wikipedia.org/wiki/PECO_Energy_Company)
+- [Blog](https://www.peco.com/blog/)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
+**Kin Score 5.0** — minimal · rubric 0.24.0 · scored 2026-10-17
 
-**Email:** kin@apievangelist.com
+| Facet | Score |
+|---|---|
+| Discoverability | 58.0 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 4.9** — Energy & Utilities
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/peco-energy/](https://apis.io/providers/peco-energy/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for PECO Energy: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/peco-energy/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
